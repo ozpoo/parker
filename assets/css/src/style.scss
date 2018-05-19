@@ -62,14 +62,20 @@ body {
 	font-family: sans-serif, 'Maison-Light';
 	color: #FFFFFF;
 	background: #191919;
-	font-size: 24px;
+	font-size: 18px;
+	font-size: calc(10px + .6vw);
 	line-height: 1.3;
 
-  &.home {
+  &.home, &.splash {
     position: fixed;
     overflow: hidden;
     height: 100%;
     width: 100%;
+
+    main {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -185,12 +191,32 @@ main{
 }
 
 .splash {
+  height: 100%;
+
+	header {
+		display: none;
+	}
+
   .top {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     text-align: center;
+  }
+
+  .middle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 50%;
+      max-width: 320px;
+    }
   }
 
   .bottom {
@@ -214,6 +240,7 @@ main{
 
 p, .page-wrap{
 	margin: 60px;
+	margin: calc(20px + 2vw);
 }
 
 .page-content{
@@ -381,12 +408,6 @@ p, .page-wrap{
 }
 
 @media only screen and (max-width:768px) {
-	body {
-		font-size: 22px;
-	}
-	p, .page-wrap{
-		margin: 30px;
-	}
 	.page-content{
 		margin: 120px 0px;
 	}
@@ -442,12 +463,6 @@ p, .page-wrap{
 }
 
 @media only screen and (max-width:568px) {
-	body {
-		font-size: 18px;
-	}
-	p, .page-wrap{
-		margin: 30px;
-	}
 	.page-content{
 		margin: 120px 0px;
 	}

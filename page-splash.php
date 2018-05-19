@@ -6,6 +6,13 @@
 			<p>Coming Soon.</p>
 		</div>
 
+		<div class="middle">
+			<img
+				alt=""
+				src="<?php echo get_template_directory_uri(); ?>/assets/img/Parker-08.png"
+				/>
+		</div>
+
 		<div class="bottom">
 			<p>Creative Services in Brand Development & Environtmental Design.</p>
 			<p>
