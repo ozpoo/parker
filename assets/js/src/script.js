@@ -61,8 +61,6 @@
 				}else{
 					next = current + 1;
 				}
-				console.log(current);
-				console.log(next);
 				$(".slide").eq(current).removeClass("top");
 				$(".slide").eq(next).addClass("top").addClass("current");
 				setTimeout(function(current){
@@ -82,7 +80,7 @@
 	        window.mozRequestAnimationFrame    ||
 	        window.oRequestAnimationFrame      ||
 	        window.msRequestAnimationFrame     ||
-	        function(/* function */ callback){
+	        function(callback){
 	            window.setTimeout(callback, 1000 / 60);
 	        }
 	    );

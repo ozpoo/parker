@@ -25,7 +25,7 @@ if (function_exists('add_theme_support')) {
 function header_scripts() {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
         wp_register_script('script',
-        get_template_directory_uri() . '/js/scripts.js?v='.time(),
+        get_template_directory_uri() . '/assets/js/build/script.js?v='.time(),
         array('jquery'), '1.0.0');
         wp_enqueue_script('script');
     }
@@ -38,11 +38,6 @@ function conditional_scripts() {
 }
 
 function styles() {
-    wp_register_style('reset',
-    get_template_directory_uri() . '/assets/css/reset.css',
-    array(), '1.0', 'all');
-    wp_enqueue_style('reset');
-
     wp_register_style('style',
     get_template_directory_uri() . '/assets/css/build/style.css?v='.time(),
     array(), '1.0', 'all');
