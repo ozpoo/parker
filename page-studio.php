@@ -31,6 +31,8 @@
 
 				?>
 
+				<p>Developed by <a href="http://ericandren.com" target="_blank">Eric 'Oz' Andren</a>.</p>
+
 			</article>
 
 		<?php endwhile; ?>
