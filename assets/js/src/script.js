@@ -2,7 +2,7 @@
 
 	$(function () {
 
-		$(document).ready(function() {
+		$(window).on("load", function() {
 			init();
 			animate();
 		});
@@ -12,7 +12,8 @@
 
 			$(".slide[data-slide='0']").addClass("current");
 
-			if($(".intro")){
+			// Check if we are loading the home page
+			if($(".page-home")){
 				setTimeout(function(){
 					$("main").addClass("show");
 				},400);

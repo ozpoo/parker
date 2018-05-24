@@ -19,9 +19,6 @@
 
 		<?php if(is_page("Home")){ ?>
 			<section class="intro">
-				<section class="top-left">
-					<p>Parker</p>
-				</section>
 				<section class="board"></section>
 			</section>
 		<?php } ?>
